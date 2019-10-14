@@ -37,7 +37,7 @@ const app = express()
 // Prender el servidor:
 // 
 
-if()
+
 
 
 app.get('/omdb', function (req, res) {
