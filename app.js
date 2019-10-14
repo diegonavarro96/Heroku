@@ -7,7 +7,7 @@
 
 const express = require('express')
 const omdb =require('./movies.js')
-
+const Port = process.env.PORT || 3000
 const app = express()
 
 
@@ -36,6 +36,8 @@ const app = express()
 
 // Prender el servidor:
 // 
+
+if()
 
 
 app.get('/omdb', function (req, res) {
@@ -89,6 +91,6 @@ app.get('*',function(req,res){
         error: 'Ruta no valida!'})
 })
 
-app.listen(3000,function(){
+app.listen(Port,function(){
     console.log('up and running!')
 })
