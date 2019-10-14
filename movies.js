@@ -1,5 +1,5 @@
 
-const credentials = require('./credentials.js')
+//const credentials = require('./credentials.js')
 const request = require('request')
 
 
@@ -13,7 +13,7 @@ else{
 }
 
 const omdbMovie = function(title, callback) {
-  const url = 'http://www.omdbapi.com/?apikey=' + credentials.apikey +
+  const url = 'http://www.omdbapi.com/?apikey=' + apikey +
               '&t=' + title
   request({ url, json: true }, function(error, response) {
     if (error) {
